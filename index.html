@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Record film production</title>
+
+    <!-- favicon -->
+    <link rel="icon" href="assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="assets/img/favicon.png">
+
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+    
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <section>
+        <nav class="navbar navbar-expand-lg navbar-dark custom_bgcolor">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/logo_white.png" alt="..." width="60" height="40">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item pe-3">
+                            <a class="nav-link active" aria-current="page" href="#">Movie</a>
+                        </li>
+                        <li class="nav-item pe-3">
+                            <a class="nav-link" href="#">TV Show</a>
+                        </li>
+                        <li class="nav-item pe-3">
+                            <a class="nav-link" href="#">Popular People</a>
+                        </li>
+                        <li class="nav-item dropdown pe-3">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                More
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Popular</a></li>
+                                <li><a class="dropdown-item" href="#">Now Playing</a></li>
+                                <li><a class="dropdown-item" href="#">Upcoming</a></li>
+                                <li><a class="dropdown-item" href="#">Top Related</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Support</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item pe-3">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-plus"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item pe-3">
+                            <button class="btn btn-outline-light btn-sm"> EN </button>
+                        </li>
+                        <li class="nav-item pe-3">
+                            <a class="nav-link" href="#">Login</a>
+                        </li>
+                        <li class="nav-item pe-3">
+                            <a class="nav-link" href="#">Join Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <section>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/img/slider1.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Doctor Strange in the Multiverse of Madness</h1>
+                        <p class="h5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi perferendis ea expedita earum autem, quo deleniti iure obcaecati nisi culpa!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/slider2.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Money Heist: Korea Joint Economic Area</h1>
+                        <p class="h5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi perferendis ea expedita earum autem, quo deleniti iure obcaecati nisi culpa!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/slider3.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Man Vs Bee</h1>
+                        <p class="h5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi perferendis ea expedita earum autem, quo deleniti iure obcaecati nisi culpa!</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <section class="my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 col-lg-8 col-md-5 col-sm-12 col-12">
+                    <h1>What's Popular</h1>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-7 col-sm-12 col-12">
+                    <ul class="nav nav-pills" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="streaming-tab" data-bs-toggle="tab" data-bs-target="#streaming-tab-pane" type="button" role="tab" aria-controls="streaming-tab-pane" aria-selected="true">Streaming</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="ontv-tab" data-bs-toggle="tab" data-bs-target="#ontv-tab-pane" type="button" role="tab" aria-controls="ontv-tab-pane" aria-selected="false">On TV</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="forrent-tab" data-bs-toggle="tab" data-bs-target="#forrent-tab-pane" type="button" role="tab" aria-controls="forrent-tab-pane" aria-selected="false">For Rent</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="intheatres-tab" data-bs-toggle="tab" data-bs-target="#intheatres-tab-pane" type="button" role="tab" aria-controls="intheatres-tab-pane" aria-selected="false">In Theatres</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12">
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="streaming-tab-pane" role="tabpanel" aria-labelledby="streaming-tab" tabindex="0">
+                            <div class="row">
+                                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+                                    <div class="card border-0">
+                                        <img src="assets/img/movie1.jpeg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Hotel Translyvania: Transformania</h5>
+                                            <p class="card-text">Feb 25, 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+                                    <div class="card border-0">
+                                        <img src="assets/img/movie2.jpeg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Obi-Wan Kenobi</h5>
+                                            <p class="card-text">Feb 25, 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+                                    <div class="card border-0">
+                                        <img src="assets/img/movie3.jpeg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Venom: Let There Be Carnage</h5>
+                                            <p class="card-text">Feb 25, 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+                                    <div class="card border-0">
+                                        <img src="assets/img/movie4.jpeg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Chip'N Dale: Rescue Rangers</h5>
+                                            <p class="card-text">Feb 25, 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+                                    <div class="card border-0">
+                                        <img src="assets/img/movie5.jpeg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">The Takedown</h5>
+                                            <p class="card-text">Feb 25, 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+                                    <div class="card border-0">
+                                        <img src="assets/img/movie6.jpeg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">The Walking Dead</h5>
+                                            <p class="card-text">Feb 25, 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="ontv-tab-pane" role="tabpanel" aria-labelledby="ontv-tab" tabindex="0">
+                            <div class="row">
+                                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+                                    <div class="card border-0">
+                                        <img src="assets/img/movie7.jpeg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">The Boys</h5>
+                                            <p class="card-text">Feb 25, 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+                                    <div class="card border-0">
+                                        <img src="assets/img/movie8.jpeg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Mrs Marvel</h5>
+                                            <p class="card-text">Feb 25, 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+                                    <div class="card border-0">
+                                        <img src="assets/img/movie9.jpeg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Stranger Things 4</h5>
+                                            <p class="card-text">Feb 25, 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+                                    <div class="card border-0">
+                                        <img src="assets/img/movie10.jpeg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Pantanal</h5>
+                                            <p class="card-text">Feb 25, 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+                                    <div class="card border-0">
+                                        <img src="assets/img/movie11.jpeg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Cara E Coragem</h5>
+                                            <p class="card-text">Feb 25, 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+                                    <div class="card border-0">
+                                        <img src="assets/img/movie12.jpeg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Love Island</h5>
+                                            <p class="card-text">Feb 25, 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="forrent-tab-pane" role="tabpanel" aria-labelledby="forrent-tab" tabindex="0">
+                            <div class="row">
+                                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+                                    <div class="card border-0">
+                                        <img src="assets/img/movie13.jpeg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Fantastic Beasts: The Secrets of Dumbledore</h5>
+                                            <p class="card-text">Feb 25, 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+                                    <div class="card border-0">
+                                        <img src="assets/img/movie14.jpeg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Sonic The Hedgehog 2</h5>
+                                            <p class="card-text">Feb 25, 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+                                    <div class="card border-0">
+                                        <img src="assets/img/movie15.jpeg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Morbius</h5>
+                                            <p class="card-text">Feb 25, 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+                                    <div class="card border-0">
+                                        <img src="assets/img/movie16.jpeg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">The Lost City</h5>
+                                            <p class="card-text">Feb 25, 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+                                    <div class="card border-0">
+                                        <img src="assets/img/movie17.jpeg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Spider Man: No Way Home</h5>
+                                            <p class="card-text">Feb 25, 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+                                    <div class="card border-0">
+                                        <img src="assets/img/movie18.jpeg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Uncharted</h5>
+                                            <p class="card-text">Feb 25, 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="intheatres-tab-pane" role="tabpanel" aria-labelledby="intheatres-tab" tabindex="0">
+                            <div class="row">
+                                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+                                    <div class="card border-0">
+                                        <img src="assets/img/movie19.jpeg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Jurassic World: Dominion</h5>
+                                            <p class="card-text">Feb 25, 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+                                    <div class="card border-0">
+                                        <img src="assets/img/movie20.jpeg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">The Black Phone</h5>
+                                            <p class="card-text">Feb 25, 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+                                    <div class="card border-0">
+                                        <img src="assets/img/movie21.jpeg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Lightyear</h5>
+                                            <p class="card-text">Feb 25, 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+                                    <div class="card border-0">
+                                        <img src="assets/img/movie22.jpeg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Topgun Maverick</h5>
+                                            <p class="card-text">Feb 25, 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+                                    <div class="card border-0">
+                                        <img src="assets/img/movie23.jpeg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Minions: The Rise of Gru</h5>
+                                            <p class="card-text">Feb 25, 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+                                    <div class="card border-0">
+                                        <img src="assets/img/movie24.jpeg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Elvis</h5>
+                                            <p class="card-text">Feb 25, 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 col-lg-8 col-md-5 col-sm-12 col-12">
+                    <h1>Free To Watch</h1>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-7 col-sm-12 col-12">
+                    <ul class="nav nav-pills" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="freemovies-tab" data-bs-toggle="tab" data-bs-target="#freemovies-tab-pane" type="button" role="tab" aria-controls="freemovies-tab-pane" aria-selected="true">Movies</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="freetv-tab" data-bs-toggle="tab" data-bs-target="#freetv-tab-pane" type="button" role="tab" aria-controls="freetv-tab-pane" aria-selected="false">TV</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12">
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="freemovies-tab-pane" role="tabpanel" aria-labelledby="freemovies-tab" tabindex="0">
+                            <div class="row">
+                                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+                                    <div class="card border-0">
+                                        <img src="assets/img/movie1.jpeg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Hotel Translyvania: Transformania</h5>
+                                            <p class="card-text">Feb 25, 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+                                    <div class="card border-0">
+                                        <img src="assets/img/movie13.jpeg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Fantastic Beasts: The Secrets of Dumbledore</h5>
+                                            <p class="card-text">Feb 25, 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+                                    <div class="card border-0">
+                                        <img src="assets/img/movie3.jpeg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Venom: Let There Be Carnage</h5>
+                                            <p class="card-text">Feb 25, 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+                                    <div class="card border-0">
+                                        <img src="assets/img/movie14.jpeg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Sonic The Hedgehog 2</h5>
+                                            <p class="card-text">Feb 25, 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+                                    <div class="card border-0">
+                                        <img src="assets/img/movie5.jpeg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">The Takedown</h5>
+                                            <p class="card-text">Feb 25, 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+                                    <div class="card border-0">
+                                        <img src="assets/img/movie15.jpeg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Morbius</h5>
+                                            <p class="card-text">Feb 25, 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="freetv-tab-pane" role="tabpanel" aria-labelledby="freetv-tab" tabindex="0">
+                            <div class="row">
+                                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+                                    <div class="card border-0">
+                                        <img src="assets/img/movie16.jpeg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">The Lost City</h5>
+                                            <p class="card-text">Feb 25, 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+                                    <div class="card border-0">
+                                        <img src="assets/img/movie2.jpeg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Obi-Wan Kenobi</h5>
+                                            <p class="card-text">Feb 25, 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+                                    <div class="card border-0">
+                                        <img src="assets/img/movie17.jpeg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Spider Man: No Way Home</h5>
+                                            <p class="card-text">Feb 25, 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+                                    <div class="card border-0">
+                                        <img src="assets/img/movie4.jpeg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Chip'N Dale Rescue Rangers</h5>
+                                            <p class="card-text">Feb 25, 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+                                    <div class="card border-0">
+                                        <img src="assets/img/movie18.jpeg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Uncharted</h5>
+                                            <p class="card-text">Feb 25, 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+                                    <div class="card border-0">
+                                        <img src="assets/img/movie19.jpeg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Jurassic World Dominion</h5>
+                                            <p class="card-text">Feb 25, 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 col-lg-8 col-md-5 col-sm-12 col-12">
+                    <h1>Latest Trailers</h1>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-7 col-sm-12 col-12">
+                    <ul class="nav nav-pills" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="trailer-streaming-tab" data-bs-toggle="tab" data-bs-target="#trailer-streaming-tab-pane" type="button" role="tab" aria-controls="trailer-streaming-tab-pane" aria-selected="true">Streaming</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="trailer-ontv-tab" data-bs-toggle="tab" data-bs-target="#trailer-ontv-tab-pane" type="button" role="tab" aria-controls="trailer-ontv-tab-pane" aria-selected="false">On TV</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="trailer-forrent-tab" data-bs-toggle="tab" data-bs-target="#trailer-forrent-tab-pane" type="button" role="tab" aria-controls="trailer-forrent-tab-pane" aria-selected="false">For Rent</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="trailer-intheatres-tab" data-bs-toggle="tab" data-bs-target="#trailer-intheatres-tab-pane" type="button" role="tab" aria-controls="trailer-intheatres-tab-pane" aria-selected="false">In Theatres</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12">
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="trailer-streaming-tab-pane" role="tabpanel" aria-labelledby="trailer-streaming-tab" tabindex="0">
+                            <div class="row">
+                                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="ratio ratio-16x9">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/43OVm86-4rU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="ratio ratio-16x9">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/-FmWuCgJmxo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="ratio ratio-16x9">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/47r8FXYZWNU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="ratio ratio-16x9">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/sfAc2U20uyg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="trailer-ontv-tab-pane" role="tabpanel" aria-labelledby="trailer-ontv-tab" tabindex="0">
+                            <div class="row">
+                                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="ratio ratio-16x9">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/DaM_wL1ZOM4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="ratio ratio-16x9">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/DtQycgMD4HQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="ratio ratio-16x9">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/3Yh_6_zItPU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="ratio ratio-16x9">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/F4Z0GHWHe60" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="trailer-forrent-tab-pane" role="tabpanel" aria-labelledby="trailer-forrent-tab" tabindex="0">
+                            <div class="row">
+                                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="ratio ratio-16x9">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/3Yh_6_zItPU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="ratio ratio-16x9">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/DtQycgMD4HQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="ratio ratio-16x9">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/43OVm86-4rU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="ratio ratio-16x9">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/47r8FXYZWNU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="trailer-intheatres-tab-pane" role="tabpanel" aria-labelledby="trailer-intheatres-tab" tabindex="0">
+                            <div class="row">
+                                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="ratio ratio-16x9">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/43OVm86-4rU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="ratio ratio-16x9">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/sfAc2U20uyg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="ratio ratio-16x9">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/DtQycgMD4HQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="ratio ratio-16x9">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/3Yh_6_zItPU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5" id="joinsection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3>Join Today</h3>
+                </div>
+                <div class="col-xl-8 col-lg-8 col-md-5 col-sm-12 col-12">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, animi cumque illo laudantium et fugit consectetur, facilis cupiditate mollitia debitis, aspernatur placeat id. Asperiores fuga earum in corporis quod eos?
+                    </p>
+                    <button class="btn btn-light" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Sign Up
+                    </button>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-7 col-sm-12 col-12">
+                    <ul>
+                        <li>Enjoy RECORD FILM PRODUCTION ad free</li>
+                        <li>Maintain a personal watchlist</li>
+                        <li>Filter by your subscribed streaming services and find something to watch</li>
+                        <li>Log the movies and TV shows you've seen</li>
+                        <li>Build custom lists</li>
+                        <li>Contribute to and improve our database</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Sign up for an account.</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Username</label>
+                        <input type="text" class="form-control" id="username">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="confirmInputPassword" class="form-label">Confirm Password</label>
+                        <input type="password" class="form-control" id="confirmInputPassword">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">I agree Terms & Condition</label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Sign up</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Leaderboards Section -->
+    <section class="my-5">
+        <div class="container">
+            <div class="row my-3">
+                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <h1>Leaderboards</h1>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <span class="badge rounded-pill text-bg-success">All Time Edits</span>
+                    <span class="badge rounded-pill text-bg-danger">Edit This Week</span>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="card mb-3 border-0">
+                        <div class="row g-0">
+                            <div class="col-md-2">
+                                <img src="assets/img/user1.jpeg" class="img-fluid rounded-circle" alt="...">
+                            </div>
+                            <div class="col-md-10">
+                                <div class="card-body">
+                                    <h5 class="card-title">rsgmovie</h5>
+                                    <div class="progress mb-2">
+                                        <div class="progress-bar bg-success" role="progressbar" aria-label="Success example" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-danger" role="progressbar" aria-label="Danger example" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="card mb-3 border-0">
+                        <div class="row g-0">
+                            <div class="col-md-2">
+                                <img src="assets/img/user2.jpeg" class="img-fluid rounded-circle" alt="...">
+                            </div>
+                            <div class="col-md-10">
+                                <div class="card-body">
+                                    <h5 class="card-title">raze464</h5>
+                                    <div class="progress mb-2">
+                                        <div class="progress-bar bg-success" role="progressbar" aria-label="Success example" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-danger" role="progressbar" aria-label="Danger example" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="card mb-3 border-0">
+                        <div class="row g-0">
+                            <div class="col-md-2">
+                                <img src="assets/img/user-4.jpeg" class="img-fluid rounded-circle" alt="...">
+                            </div>
+                            <div class="col-md-10">
+                                <div class="card-body">
+                                    <h5 class="card-title">Banana</h5>
+                                    <div class="progress mb-2">
+                                        <div class="progress-bar bg-success" role="progressbar" aria-label="Success example" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-danger" role="progressbar" aria-label="Danger example" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="card mb-3 border-0">
+                        <div class="row g-0">
+                            <div class="col-md-2">
+                                <img src="assets/img/user3.jpeg" class="img-fluid rounded-circle" alt="...">
+                            </div>
+                            <div class="col-md-10">
+                                <div class="card-body">
+                                    <h5 class="card-title">StarrySky</h5>
+                                    <div class="progress mb-2">
+                                        <div class="progress-bar bg-success" role="progressbar" aria-label="Success example" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-danger" role="progressbar" aria-label="Danger example" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="card mb-3 border-0">
+                        <div class="row g-0">
+                            <div class="col-md-2">
+                                <img src="assets/img/user1.jpeg" class="img-fluid rounded-circle" alt="...">
+                            </div>
+                            <div class="col-md-10">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pingu51</h5>
+                                    <div class="progress mb-2">
+                                        <div class="progress-bar bg-success" role="progressbar" aria-label="Success example" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-danger" role="progressbar" aria-label="Danger example" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="card mb-3 border-0">
+                        <div class="row g-0">
+                            <div class="col-md-2">
+                                <img src="assets/img/user2.jpeg" class="img-fluid rounded-circle" alt="...">
+                            </div>
+                            <div class="col-md-10">
+                                <div class="card-body">
+                                    <h5 class="card-title">Samara</h5>
+                                    <div class="progress mb-2">
+                                        <div class="progress-bar bg-success" role="progressbar" aria-label="Success example" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-danger" role="progressbar" aria-label="Danger example" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="card mb-3 border-0">
+                        <div class="row g-0">
+                            <div class="col-md-2">
+                                <img src="assets/img/user-4.jpeg" class="img-fluid rounded-circle" alt="...">
+                            </div>
+                            <div class="col-md-10">
+                                <div class="card-body">
+                                    <h5 class="card-title">fzlins</h5>
+                                    <div class="progress mb-2">
+                                        <div class="progress-bar bg-success" role="progressbar" aria-label="Success example" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-danger" role="progressbar" aria-label="Danger example" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="card mb-3 border-0">
+                        <div class="row g-0">
+                            <div class="col-md-2">
+                                <img src="assets/img/user3.jpeg" class="img-fluid rounded-circle" alt="...">
+                            </div>
+                            <div class="col-md-10">
+                                <div class="card-body">
+                                    <h5 class="card-title">tssdl</h5>
+                                    <div class="progress mb-2">
+                                        <div class="progress-bar bg-success" role="progressbar" aria-label="Success example" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-danger" role="progressbar" aria-label="Danger example" style="width: 98%" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="card mb-3 border-0">
+                        <div class="row g-0">
+                            <div class="col-md-2">
+                                <img src="assets/img/user-4.jpeg" class="img-fluid rounded-circle" alt="...">
+                            </div>
+                            <div class="col-md-10">
+                                <div class="card-body">
+                                    <h5 class="card-title">MidnightNeon</h5>
+                                    <div class="progress mb-2">
+                                        <div class="progress-bar bg-success" role="progressbar" aria-label="Success example" style="width: 99%" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-danger" role="progressbar" aria-label="Danger example" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="card mb-3 border-0">
+                        <div class="row g-0">
+                            <div class="col-md-2">
+                                <img src="assets/img/user3.jpeg" class="img-fluid rounded-circle" alt="...">
+                            </div>
+                            <div class="col-md-10">
+                                <div class="card-body">
+                                    <h5 class="card-title">Heli5m</h5>
+                                    <div class="progress mb-2">
+                                        <div class="progress-bar bg-success" role="progressbar" aria-label="Success example" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-danger" role="progressbar" aria-label="Danger example" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <section class="custom_bgcolor py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-8 col-sm-12 col-xs-12">
+                    <img src="assets/img/logo_white.png" alt="" class="mx-auto w-50 d-block">
+                    <div class="d-grid gap-2">
+                        <button type="button" class="btn btn-light">Join the community</button>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-6 text-white">
+                    <h4>THE BASICS</h4>
+                    <p>About Company</p>
+                    <p>Contact Us</p>
+                    <p>Support Forums</p>
+                    <p>API</p>
+                    <p>System Status</p>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-6 text-white">
+                    <h4>GET INVOLVED</h4>
+                    <p>Contribution Bible</p>
+                    <p>Add New Movie</p>
+                    <p>Add New TV Show</p>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-6 text-white">
+                    <h4>COMMUNITY</h4>
+                    <p>Guidelines</p>
+                    <p>Discussions</p>
+                    <p>LeaderBoards</p>
+                    <p>Twitter</p>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-6 text-white">
+                    <h4>LEGAL</h4>
+                    <p>Terms of Use</p>
+                    <p>API Terms of Use</p>
+                    <p>Privacy Policy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
